@@ -7,11 +7,11 @@ from rdkit.Chem.Draw import rdMolDraw2D
 from rdkit.Chem.MolStandardize import rdMolStandardize
 from rdkit import Chem
 from rdkit.Chem import AllChem
-from taut_src.tautomer import enumerate_tauts
-from taut_src.combine_frag import link_fragment
-from taut_src.rank_tautomer import rank_tauts
-from taut_src.molgpka.protonate import protonate_mol
-from taut_src.get_vmrs import enumerate_vmrs
+from sphysnet_taut.tautomer import enumerate_tauts
+from sphysnet_taut.combine_frag import link_fragment
+from sphysnet_taut.rank_tautomer import rank_tauts
+from sphysnet_taut.molgpka.protonate import protonate_mol
+from sphysnet_taut.get_vmrs import enumerate_vmrs
 from collections import namedtuple
 import os
 import argparse

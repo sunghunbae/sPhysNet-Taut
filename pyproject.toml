@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphysnet_taut"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "rdkit>=2024",
+    "pandas",
+    "pytest",
+    ]
+authors = [{name = "Sung-Hun Bae", email="sunghun.bae@gmail.com"}, ]
+maintainers = [{name = "Sung-Hun Bae", email="sunghun.bae@gmail.com"}, ]
+description = "RFast and Accurate Prediction of Tautomer Ratios in Aqueous Solution via Siamese Neural Network"
+readme = "README.md"
+license = "MIT"
+
+keywords = ["tautomer"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    ]
+
+[project.urls]
+Homepage        = "https://github.com/sunghunbae/sPhysNet-Taut"
+Repository      = "https://github.com/sunghunbae/sPhysNet-Taut.git"
+Issues          = "https://github.com/sunghunbae/sPhysNet-Taut/issues"
+Changelog       = "https://github.com/sunghunbae/sPhysNet-Taut/blob/master/CHANGELOG.md"
+Documentation   = "https://sunghunbae.github.io/sPhysNet-Taut/"
+
+[project.scripts]
+predict_tautomer_ratios = "sphysnet_taut.cli:predict_tautomer_ratios"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"sphysnet_taut.weights" = [ "*.pt" ]
+"sphysnet_taut.data" = [ "*.txt"]

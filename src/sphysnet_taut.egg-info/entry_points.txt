@@ -1,0 +1,2 @@
+[console_scripts]
+predict_tautomer_ratios = sphysnet_taut.cli:predict_tautomer_ratios
