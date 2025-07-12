@@ -3,12 +3,12 @@ import time
 import torch
 import torch.nn as nn
 
-from taut_src.Networks.DimeLayers.MessagePassingLayer import DimeNetMPN
-from taut_src.Networks.DimeLayers.OutputLayer import OutputLayer
-from taut_src.Networks.SharedLayers.ResidualLayer import ResidualLayer
-from taut_src.Networks.SharedLayers.ActivationFns import activation_getter
-from taut_src.utils.time_meta import record_data
-from taut_src.utils.utils_functions import floating_type, get_n_params
+from sphysnet_taut.Networks.DimeLayers.MessagePassingLayer import DimeNetMPN
+from sphysnet_taut.Networks.DimeLayers.OutputLayer import OutputLayer
+from sphysnet_taut.Networks.SharedLayers.ResidualLayer import ResidualLayer
+from sphysnet_taut.Networks.SharedLayers.ActivationFns import activation_getter
+from sphysnet_taut.utils.time_meta import record_data
+from sphysnet_taut.utils.utils_functions import floating_type, get_n_params
 
 
 class DimeModule(nn.Module):

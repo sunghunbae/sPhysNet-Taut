@@ -29,12 +29,17 @@ def generate_confs(smi, numConfs=1):
     mol = AllChem.AddHs(mol)
     # cids = AllChem.EmbedMultipleConfs(mol, numConfs=128, maxAttempts=1000, numThreads=8)
     
-    ps = AllChem.ETKDG()
-    ps.maxAttempts = 10000
-    ps.randomSeed = 1
-    ps.pruneRmsThresh = 0.1
-    ps.numThreads = 0
-    cids = AllChem.EmbedMultipleConfs(mol, numConfs, ps)
+    # ps = AllChem.ETKDG()
+    # ps.maxAttempts = 10000
+    # ps.randomSeed = 1
+    # ps.pruneRmsThresh = 0.1
+    # ps.numThreads = 0
+    cids = AllChem.EmbedMultipleConfs(mol, 
+                                      numConfs, 
+                                      maxAttempts=1000, 
+                                      randomSeed=1, 
+                                      pruneRmsThresh=0.1, 
+                                      numThreads=0)
     
     clusters = cluster_conformers(mol, rmsd_cutoff=0.5)
 

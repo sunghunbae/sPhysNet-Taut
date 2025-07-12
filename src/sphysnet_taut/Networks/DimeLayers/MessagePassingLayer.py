@@ -4,8 +4,8 @@ from torch import Tensor
 from torch_geometric.nn import MessagePassing
 from torch_sparse import SparseTensor
 
-from taut_src.Networks.SharedLayers.ActivationFns import activation_getter
-from taut_src.utils.utils_functions import floating_type, get_n_params
+from sphysnet_taut.Networks.SharedLayers.ActivationFns import activation_getter
+from sphysnet_taut.utils.utils_functions import floating_type, get_n_params
 
 
 class DimeNetMPN(MessagePassing):

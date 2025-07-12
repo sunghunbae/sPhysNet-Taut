@@ -1,4 +1,4 @@
-name: solv_rdkit_2020
+name: sphysnet_taut
 channels:
   - rdkit
   - pytorch
@@ -108,4 +108,4 @@ dependencies:
     - urllib3==1.26.11
     - yacs==0.1.8
     - zipp==3.6.0
-prefix: /localhome/anaconda3/envs/solv_rdkit_2020
+prefix: /home2/shbae/miniforge3/envs/sphysnet_taut

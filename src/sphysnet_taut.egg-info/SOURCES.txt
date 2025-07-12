@@ -74,6 +74,10 @@ src/sphysnet_taut/utils/gauss/__init__.py
 src/sphysnet_taut/utils/gauss/read_gauss_log.py
 src/sphysnet_taut/utils/gauss/read_gauss_single.py
 src/sphysnet_taut/utils/gauss/sdf_to_gauss.py
+src/sphysnet_taut/utils/tables/c6ab.npy
+src/sphysnet_taut/utils/tables/r0ab.npy
+src/sphysnet_taut/utils/tables/r2r4.npy
+src/sphysnet_taut/utils/tables/rcov.npy
 src/sphysnet_taut/weights/best_model1.pt
 src/sphysnet_taut/weights/best_model2.pt
 src/sphysnet_taut/weights/best_model3.pt

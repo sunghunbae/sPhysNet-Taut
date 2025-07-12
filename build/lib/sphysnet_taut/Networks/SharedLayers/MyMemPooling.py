@@ -3,7 +3,7 @@ from torch_geometric.nn.pool import MemPooling
 import torch
 import torch.nn as nn
 
-from taut_src.Networks.PhysLayers.PhysModule import OutputLayer
+from sphysnet_taut.Networks.PhysLayers.PhysModule import OutputLayer
 
 
 class MyMemPooling(nn.Module):

@@ -20,7 +20,7 @@ from torch_scatter import scatter
 # Constants:
 
 # Coulomb’s constant in eV A and e
-from taut_src.utils.time_meta import record_data
+from sphysnet_taut.utils.time_meta import record_data
 
 k_e = 14.399645352
 # CPU device, part of the functions are calculated faster in cpu

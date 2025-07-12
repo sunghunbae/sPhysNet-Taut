@@ -1,7 +1,7 @@
 Metadata-Version: 2.4
 Name: sphysnet_taut
 Version: 1.0.0
-Summary: RFast and Accurate Prediction of Tautomer Ratios in Aqueous Solution via Siamese Neural Network
+Summary: Fast and Accurate Prediction of Tautomer Ratios in Aqueous Solution via Siamese Neural Network
 Author-email: Sung-Hun Bae <sunghun.bae@gmail.com>
 Maintainer-email: Sung-Hun Bae <sunghun.bae@gmail.com>
 License-Expression: MIT
@@ -20,6 +20,8 @@ Description-Content-Type: text/markdown
 License-File: LICENSE.txt
 Requires-Dist: rdkit>=2024
 Requires-Dist: pandas
+Requires-Dist: ase
+Requires-Dist: treelib
 Requires-Dist: pytest
 Dynamic: license-file
 

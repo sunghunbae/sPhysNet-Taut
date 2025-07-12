@@ -1,4 +1,4 @@
-from taut_src.molgpka.predict_pka import predict
+from sphysnet_taut.molgpka.predict_pka import predict
 from copy import deepcopy
 from rdkit import Chem
 

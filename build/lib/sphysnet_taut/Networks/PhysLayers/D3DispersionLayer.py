@@ -1,7 +1,7 @@
 import warnings
 import torch.nn as nn
 
-from taut_src.utils.grimme_d3 import edisp, d3_autoang
+from sphysnet_taut.utils.grimme_d3 import edisp, d3_autoang
 
 
 class D3DispersionLayer(nn.Module):

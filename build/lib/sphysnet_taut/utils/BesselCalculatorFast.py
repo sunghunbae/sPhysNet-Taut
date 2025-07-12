@@ -1,8 +1,8 @@
 import torch
 
-from taut_src.utils.BesselCalculator import bessel_expansion_raw, bessel_expansion_continuous
-from taut_src.utils.basis_utils import Jn_zeros, Jn, spherical_bessel_formulas, real_sph_harm, Y_l_fast
-from taut_src.utils.utils_functions import floating_type, get_device
+from sphysnet_taut.utils.BesselCalculator import bessel_expansion_raw, bessel_expansion_continuous
+from sphysnet_taut.utils.basis_utils import Jn_zeros, Jn, spherical_bessel_formulas, real_sph_harm, Y_l_fast
+from sphysnet_taut.utils.utils_functions import floating_type, get_device
 
 
 class BesselCalculator:

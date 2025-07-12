@@ -5,9 +5,9 @@ import torch_geometric
 from torch import Tensor
 from torch_sparse import SparseTensor
 
-from taut_src.utils.utils_functions import semi_orthogonal_glorot_weights, floating_type
-from taut_src.Networks.SharedLayers.ResidualLayer import ResidualLayer
-from taut_src.Networks.SharedLayers.ActivationFns import activation_getter
+from sphysnet_taut.utils.utils_functions import semi_orthogonal_glorot_weights, floating_type
+from sphysnet_taut.Networks.SharedLayers.ResidualLayer import ResidualLayer
+from sphysnet_taut.Networks.SharedLayers.ActivationFns import activation_getter
 
 
 class InteractionModule(nn.Module):

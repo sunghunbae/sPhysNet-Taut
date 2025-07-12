@@ -4,12 +4,12 @@ from math import ceil
 
 import torch
 
-from taut_src.Networks.SharedLayers.ResidualLayer import ResidualLayer
-from taut_src.Networks.SharedLayers.ActivationFns import activation_getter
-from taut_src.Networks.PhysLayers.Interaction_module import InteractionModule
-from taut_src.Networks.UncertaintyLayers.MCDropout import ConcreteDropout
-from taut_src.utils.time_meta import record_data
-from taut_src.utils.utils_functions import floating_type, get_n_params, option_solver, _get_index_from_matrix
+from sphysnet_taut.Networks.SharedLayers.ResidualLayer import ResidualLayer
+from sphysnet_taut.Networks.SharedLayers.ActivationFns import activation_getter
+from sphysnet_taut.Networks.PhysLayers.Interaction_module import InteractionModule
+from sphysnet_taut.Networks.UncertaintyLayers.MCDropout import ConcreteDropout
+from sphysnet_taut.utils.time_meta import record_data
+from sphysnet_taut.utils.utils_functions import floating_type, get_n_params, option_solver, _get_index_from_matrix
 
 
 class OutputLayer(torch.nn.Module):

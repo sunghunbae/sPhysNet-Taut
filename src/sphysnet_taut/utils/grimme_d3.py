@@ -4,7 +4,8 @@ import torch
 import torch_geometric
 from torch_scatter import scatter
 
-from taut_src.utils.utils_functions import floating_type
+from sphysnet_taut.utils.utils_functions import floating_type
+from importlib.resources import files
 
 """
 Pytorch implementation of Grimme's D3 method (only Becke-Johnson damping is implemented)
@@ -14,7 +15,7 @@ Grimme, Stefan, et al. "A consistent and accurate ab initio parametrization of d
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # relative filepath to package folder
-package_directory = os.path.dirname(os.path.abspath(__file__))
+# package_directory = os.path.dirname(os.path.abspath(__file__))
 
 # conversion factors used in grimme d3 code
 d3_autoang = 0.52917726  # for converting distance from bohr to angstrom
@@ -30,13 +31,18 @@ d3_k2 = 4 / 3
 d3_k3 = -4.000
 
 # tables with reference values
-_d3_c6ab = np.load(os.path.join(package_directory, "tables", "c6ab.npy"))
+
+# _d3_c6ab = np.load(os.path.join(package_directory, "tables", "c6ab.npy"))
+_d3_c6ab = np.load(files("sphysnet_taut.utils.tables").joinpath("c6ab.npy"))
 d3_c6ab = torch.Tensor(_d3_c6ab).type(floating_type).to(device)
-_d3_r0ab = np.load(os.path.join(package_directory, "tables", "r0ab.npy"))
+# _d3_r0ab = np.load(os.path.join(package_directory, "tables", "r0ab.npy"))
+_d3_r0ab = np.load(files("sphysnet_taut.utils.tables").joinpath("r0ab.npy"))
 d3_r0ab = torch.Tensor(_d3_r0ab).type(floating_type).to(device)
-_d3_rcov = np.load(os.path.join(package_directory, "tables", "rcov.npy"))
+# _d3_rcov = np.load(os.path.join(package_directory, "tables", "rcov.npy"))
+_d3_rcov = np.load(files("sphysnet_taut.utils.tables").joinpath("rcov.npy"))
 d3_rcov = torch.Tensor(_d3_rcov).type(floating_type).to(device)
-_d3_r2r4 = np.load(os.path.join(package_directory, "tables", "r2r4.npy"))
+# _d3_r2r4 = np.load(os.path.join(package_directory, "tables", "r2r4.npy"))
+_d3_r2r4 = np.load(files("sphysnet_taut.utils.tables").joinpath("r2r4.npy"))
 d3_r2r4 = torch.Tensor(_d3_r2r4).type(floating_type).to(device)
 d3_maxc = 5  # maximum number of coordination complexes
 

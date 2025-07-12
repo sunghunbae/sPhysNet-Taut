@@ -13,9 +13,9 @@ import numpy as np
 import pandas as pd
 
 import torch
-from taut_src.molgpka.utils.ionization_group import get_ionization_aid
-from taut_src.molgpka.utils.descriptor import mol2vec
-from taut_src.molgpka.utils.net import GCNNet
+from sphysnet_taut.molgpka.utils.ionization_group import get_ionization_aid
+from sphysnet_taut.molgpka.utils.descriptor import mol2vec
+from sphysnet_taut.molgpka.utils.net import GCNNet
 
 root = osp.abspath(osp.dirname(__file__))
 #root = os.path.split(os.path.realpath(__file__))[0]

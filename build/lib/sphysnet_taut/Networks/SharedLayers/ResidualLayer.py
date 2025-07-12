@@ -1,8 +1,8 @@
 import torch.nn as nn
 
-from taut_src.Networks.SharedLayers.ActivationFns import activation_getter
-from taut_src.Networks.UncertaintyLayers.MCDropout import ConcreteDropout
-from taut_src.utils.utils_functions import semi_orthogonal_glorot_weights, get_n_params
+from sphysnet_taut.Networks.SharedLayers.ActivationFns import activation_getter
+from sphysnet_taut.Networks.UncertaintyLayers.MCDropout import ConcreteDropout
+from sphysnet_taut.utils.utils_functions import semi_orthogonal_glorot_weights, get_n_params
 
 
 class ResidualLayer(nn.Module):

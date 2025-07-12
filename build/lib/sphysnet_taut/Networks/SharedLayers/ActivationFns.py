@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from taut_src.utils.utils_functions import get_device
+from sphysnet_taut.utils.utils_functions import get_device
 
 
 def _shifted_soft_plus(x):

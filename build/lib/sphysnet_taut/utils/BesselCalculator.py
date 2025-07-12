@@ -3,8 +3,8 @@ import os
 import torch
 import torch.nn
 
-from taut_src.utils.basis_utils import bessel_basis, real_sph_harm
-from taut_src.utils.utils_functions import get_device
+from sphysnet_taut.utils.basis_utils import bessel_basis, real_sph_harm
+from sphysnet_taut.utils.utils_functions import get_device
 
 
 def _cutoff_fn(D, cutoff):

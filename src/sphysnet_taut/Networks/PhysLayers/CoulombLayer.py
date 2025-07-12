@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from taut_src.utils.utils_functions import cal_coulomb_E, floating_type
+from sphysnet_taut.utils.utils_functions import cal_coulomb_E, floating_type
 
 
 class CoulombLayer(nn.Module):

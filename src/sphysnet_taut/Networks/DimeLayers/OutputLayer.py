@@ -3,9 +3,9 @@ import torch.nn as nn
 from torch_geometric.nn import MessagePassing
 from torch_scatter import scatter
 
-from taut_src.Networks.SharedLayers.ActivationFns import activation_getter
-from taut_src.Networks.UncertaintyLayers.MCDropout import ConcreteDropout
-from taut_src.utils.utils_functions import get_n_params
+from sphysnet_taut.Networks.SharedLayers.ActivationFns import activation_getter
+from sphysnet_taut.Networks.UncertaintyLayers.MCDropout import ConcreteDropout
+from sphysnet_taut.utils.utils_functions import get_n_params
 
 
 class _MPNScatter(MessagePassing):

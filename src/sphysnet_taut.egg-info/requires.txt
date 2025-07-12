@@ -1,3 +1,5 @@
 rdkit>=2024
 pandas
+ase
+treelib
 pytest

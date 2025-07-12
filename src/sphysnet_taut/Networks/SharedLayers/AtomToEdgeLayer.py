@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from taut_src.Networks.SharedLayers.ActivationFns import activation_getter
+from sphysnet_taut.Networks.SharedLayers.ActivationFns import activation_getter
 
 
 class AtomToEdgeLayer(nn.Module):

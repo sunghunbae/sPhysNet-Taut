@@ -10,7 +10,7 @@ import os
 import pandas as pd
 
 root = os.path.abspath(os.path.dirname(__file__))
-#root = os.path.join(os.path.abspath(""), "taut_src/molgpka/utils")
+#root = os.path.join(os.path.abspath(""), "sphysnet_taut/molgpka/utils")
 smarts_file = os.path.join(root, "smarts_pattern.tsv")
 
 def split_acid_base_pattern(smarts_file):

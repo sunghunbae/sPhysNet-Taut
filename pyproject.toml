@@ -9,11 +9,13 @@ requires-python = ">=3.12"
 dependencies = [
     "rdkit>=2024",
     "pandas",
+    "ase",
+    "treelib",
     "pytest",
     ]
 authors = [{name = "Sung-Hun Bae", email="sunghun.bae@gmail.com"}, ]
 maintainers = [{name = "Sung-Hun Bae", email="sunghun.bae@gmail.com"}, ]
-description = "RFast and Accurate Prediction of Tautomer Ratios in Aqueous Solution via Siamese Neural Network"
+description = "Fast and Accurate Prediction of Tautomer Ratios in Aqueous Solution via Siamese Neural Network"
 readme = "README.md"
 license = "MIT"
 
@@ -42,3 +44,4 @@ where = ["src"]
 [tool.setuptools.package-data]
 "sphysnet_taut.weights" = [ "*.pt" ]
 "sphysnet_taut.data" = [ "*.txt"]
+"sphysnet_taut.utils.tables" = [ "*.npy" ]
